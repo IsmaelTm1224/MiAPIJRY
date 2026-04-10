@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>API NEXUS | Terminal 2026</title>
+
+<link rel="stylesheet" href="CSSP.css">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body>
+
+<div class="scanlines"></div>
+<canvas id="matrix-canvas"></canvas>
+
+<main class="container">
+
+<!-- HEADER -->
+<header class="main-header">
+    <div class="logo-area">
+        <span class="glitch-text" data-text="API_NEXUS_v4.0">API_NEXUS_v4.0</span>
+
+        <div class="system-status">
+            <div class="pulse-red"></div>
+            EN LÍNEA: NODO_DOMINICANO_01
+        </div>
+    </div>
+</header>
+
+<!-- INFO SECTION -->
+<section class="section-box fade-in">
+    <h2 class="neon-title">01. SISTEMA DE APIs</h2>
+
+    <div class="bento-grid">
+
+        <div class="bento-card long">
+            <h3>¿Qué es una API?</h3>
+            <p>
+                Una API es un sistema de comunicación entre software. Permite enviar solicitudes,
+                recibir respuestas y conectar servicios sin intervención humana.
+            </p>
+        </div>
+
+        <div class="bento-card">
+            <h3>REST</h3>
+            <p>Modelo basado en HTTP (GET, POST, PUT, DELETE).</p>
+        </div>
+
+        <div class="bento-card accent-card">
+            <h3>GraphQL</h3>
+            <p>Consulta exacta de datos. Más eficiente que REST.</p>
+        </div>
+
+        <div class="bento-card">
+            <h3>gRPC</h3>
+            <p>Comunicación ultrarrápida con Protocol Buffers.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- TERMINAL + FORM -->
+<section class="section-box">
+
+<h2 class="neon-title">02. TRANSMISIÓN DE DATOS</h2>
+
+<div class="gateway-container">
+
+<!-- TERMINAL -->
+<div class="gateway-info">
+
+<h3>Consola del Sistema</h3>
+
+<div id="system-log" class="terminal-box">
+<p>> Inicializando sistema...</p>
+</div>
+
+<div class="status-bar">
+<span id="api-status-dot" class="online"></span>
+<span id="ping-text">LATENCIA: --ms</span>
+</div>
+
+</div>
+
+<!-- FORM -->
+<form id="api-contact-form" class="modern-form">
+
+<input type="hidden" name="time" id="current-time-input">
+
+<div class="input-group">
+
+<div class="input-block">
+<input type="text" name="name" required placeholder=" ">
+<label>NOMBRE</label>
+</div>
+
+<div class="input-block">
+<input type="email" name="user_email" required placeholder=" ">
+<label>EMAIL</label>
+</div>
+
+</div>
+
+<div class="input-block">
+<textarea name="message" rows="5" required placeholder=" "></textarea>
+<label>MENSAJE</label>
+</div>
+
+<button type="submit" id="submit-btn" class="btn-ultra">
+<span class="btn-inner">
+<span class="text">ENVIAR MENSAJE</span>
+</span>
+</button>
+
+</form>
+
+</div>
+</section>
+
+<!-- NUEVA SECCIÓN EXTRA -->
+<section class="section-box">
+<h2 class="neon-title">03. ESTADO DEL SISTEMA</h2>
+
+<div class="stats-grid">
+
+<div class="stat">
+<h3>APIs ACTIVAS</h3>
+<p id="api-count">128</p>
+</div>
+
+<div class="stat">
+<h3>REQUESTS / MIN</h3>
+<p id="req-count">2,540</p>
+</div>
+
+<div class="stat">
+<h3>UPTIME</h3>
+<p>99.99%</p>
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<script src="JSC.js"></script>
+
+</body>
+</html>
